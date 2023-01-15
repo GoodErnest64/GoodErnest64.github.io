@@ -1,0 +1,38 @@
+body {
+    background-image: url(../img/bg1.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+.darkali {
+    background-color: rgb(20, 20, 20);
+    color:rgb(255, 255, 255);
+}
+
+.link {
+    display: block;
+    width: 100%;
+    font-size:larger;
+    outline-offset: 10px;
+    background-color: rgb(20, 20, 20);
+    outline-color: rgb(20, 20, 20);
+    border-color: rgb(20, 20, 20);
+    margin-bottom: 4px;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text h1 {
+    color :white;
+}
+
+.text p {
+    color :white;
+}
+
+hr {
+    color: white;
+}
