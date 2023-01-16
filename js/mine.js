@@ -1,0 +1,3 @@
+function clicky(){
+    alert("Clicked")
+}

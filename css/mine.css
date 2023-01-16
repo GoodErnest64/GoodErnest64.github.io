@@ -23,16 +23,76 @@ body {
 
 .text {
     background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
 }
 
 .text h1 {
     color :white;
 }
-
 .text p {
     color :white;
+    
 }
 
 hr {
     color: white;
 }
+
+.linkyy {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    transition: background-color 500ms linear;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.linkyy:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    transition: background-color 500ms linear;
+}
+
+.imggg {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30%;
+    display: block;
+}
+
+.ali {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.alii {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.centerhor {
+    margin-top: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
