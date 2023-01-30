@@ -1,0 +1,50 @@
+p {
+    text-align: right;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: right;
+}
+
+pre {
+    text-align: left;
+    border-radius: 1vh;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(200, 200, 200)
+}
+
+.var {
+    color:red;
+}
+.func {
+    color:green;
+}
+.par{
+    color:orange;
+}
+.str {
+    color:rgb(168, 109, 0);
+}
+.num {
+    color:blueviolet;
+}
+.blue {
+    color:rgb(0, 162, 255);
+}
+.info {
+    border-radius: 1vh;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: rgb(122, 240, 255);
+    border: 1px solid rgb(0, 225, 255)
+}
+
+a {
+    text-align: center !important;
+    text-decoration: none;
+    font-size: 350%;
+
+}
