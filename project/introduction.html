@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fa_IR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش پایتون</title>
+    <link rel="stylesheet" href="../css\bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <head>
+            <h2>GoodErnest64</h1>
+            <hr>
+        </head>
+        <main style="direction: rtl;">
+            <h1>نرم افزار های مورد نیاز : </h1>
+            <ul>
+                <li>Python : زبان پایتون که میتوانید از python.org دانلود کنید</li>
+                <li>Visual Studio Code : نرم افزاری که در آن کد ها را مینویسیم که به تعدادی extension نیاز دارد</li>
+                <ul>
+                    <li>Python : پشتیبانی برای پایتون در نرم افزار</li>
+                    <li>Tabnine AI : دستیار هوش مصنوعی که در نوشتن به شما کمک میکند</li>
+                </ul>
+            </ul>
+            <p>بعد از نصب نرم افزار آن را باز کنید و یک فولدر بسازید و آن را در نرم افزار باز کنید. سپس یک فایل با پسوند py. بسازید وآن را باز کنید. حال شروع به نوشتن میکنیم.</p>
+            <h1>اولین برنامه شما</h1>
+            <p>قبل از شروع کردن برنامه نویسی باید یک چیزی را به یاد بسپارید. نرم افزار هایی که به صورت عادی میبینید از یک پنجره استفاده میکنند. اما ما فعلا خروجی نرم افزار را در console که همان cmd کامپیوتر است استفاده میکنیم اما جلوتر به ساختن پنجره نیز میرسیم.</p>
+            <p>در زبان برنامه نویسی پایتون از دستور print() برای نمایش دادن متن در کنسول استفاده میکنیم. پارامتری که قبول میکند نیز از نوع string است. اگر این اصطلاح ها را متوجه نمیشوید هیچ اشکالی ندارد جلوتر به طور کامل به آنها میپردازیم.</p>
+            <pre><span class="func">print</span>(<span class="str">"Hi. I'm Working !!!"</span>)</pre>
+            <p>حال اگر این کد را اجرا کنید خروجی زیر را میبینید : </p>
+            <pre><em>Hi. I'm Working !!!</em></pre>
+            <h1>انواع داده : </h1>
+            <p>همانطور که میدانید داده ها در کامپیوتر به صورت باینری یعنی همان0 و 1 ها ذخیره میشود. اما در برنامه نویسی برای سادگی کار ما داده ها به انواع مختلفی تقسیم شده اند.</p>
+            <ul>
+                <li>int : اعداد صحیح</li>
+                <li>float : اعداد اعشاری</li>
+                <li>string : یک جمله</li>
+                <li>bool : درست یا غلط</li>
+                <li>list : یک لیست از داده های دیگر</li>
+                <li>dictionary : یک لیست از داده های دیگر با نام گذاری مخصوص</li>
+                <li>و...</li>
+            </ul>
+            <p>در بقیه زبان های برنامه نویسی مانند c++ و java قبل از مشخص کردن متغیر نیاز است نوع آن را مشخص کنیم اما پایتون اینگونه نیست. برای مشخص کردن یک متغیر باید یک نام و مقدار آن را قرار دهیم.</p>
+            <pre>
+a <span class="var">=</span> <span class="num">0</span> #int
+b <span class="var">=</span> <span class="num">3.14</span> #float 
+c <span class="var">=</span> <span class="str">"I am a string"</span> #string
+d <span class="var">=</span> <span class="blue">True</span>
+e <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span><span class="par">]</span> #list
+f <span class="var">=</span> <span class="par">{</span><span class="str">"item1"</span>:<span class="str">"apple"</span>, <span class="str">"item2"</span>:<span class="str">"orange"</span><span class="par">}</span> #dictionary</pre>
+            <p class="info"> نکته : الان شاید به خاطر # هایی که در کد گذاشتم گیج شده باشید. به آن بخش هایی که قبل آن ها هشتگ می آید کامنت میگویند و برای یادداشت گذاری استفاده میشود. نکته مهم راجع به کامنت ها این است که پایتون کامنت را نادیده میگیرد. یعنی اجرا نمیشود و فقط برای خودتان یا کسانی است که در آینده میخواهند کد را بخوانند.</p>
+            <h1>محاسبات : </h1>
+            <p>وقتی از کامپیوتر و برنامه نویسی حرف میزنیم قطعا بحث محاسبات نیز به میان می آید. در پایتون از عملگر های زیر برای انجام محاسبات استفاده میکنیم : </p>
+            <ul>
+                <li>= : مساوی</li>
+                <li>+ : جمع</li>
+                <li>- : منها</li>
+                <li>* : ضرب</li>
+                <li>/ : تقسیم</li>
+                <li>** : توان</li>
+                <li>// : ریشه</li>
+                <li>% : باقی مانده تقسیم</li>
+                <li>+= : مقدار را مساوی آن عدد + عدد بعدش میکند</li>
+                <li>-= : مقدار را مساوی آن عدد - عدد بعدش میکند</li>
+                <li>*= : مقدار را مساوی آن عدد * عدد بعدش میکند</li>
+                <li>/= : مقدار را مساوی آن عدد / عدد بعدش میکند</li>
+                <li>**= : مقدار را مساوی آن عدد به توان عدد بعدش میکند</li>
+                <li>//= : مقدار را مساوی ریشه عدد بعدم آن عدد میکند</li>
+                <li>%= : مقدار را مساوی باقی مانده آن عدد تقسیم بر عدد بعدش میکند</li>
+            </ul>
+            <p>مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="num">10</span>
+b <span class="var">=</span> <span class="num">20</span>
+c <span class="var">=</span> <span class="num">3</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a + b = </span><span class="num">{</span>a <span class="var">+</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a - b = </span><span class="num">{</span>a <span class="var">-</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a * b = </span><span class="num">{</span>a <span class="var">*</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a / b = </span><span class="num">{</span>a <span class="var">/</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a ** c = </span><span class="num">{</span>a <span class="var">**</span> c<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a // c = </span><span class="num">{</span>a <span class="var">//</span> c<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a % c = </span><span class="num">{</span>a <span class="var">%</span> c<span class="num">}</span><span class="str">"</span><span class="par">)</span></pre>
+            <div class="info">
+                <p>نکته : می دانید که برای ساختن string از "" استفاده میکنیم . اما چگونه مقدار یک متغیر را print کنیم ؟ در مثال بالا من قبل از "" ها یک  f گذاشتم که مخفف format است. نحوه کار فرمت این است که اگر درون متن {متغیر} ببیند به جای {} مقدار متغیر را قرار می دهد. </p>
+                <p>برای مثال : </p>
+                <pre>
+a <span class="var">=</span> <span class="num">10</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"a is equal to : </span><span class="num">{</span>a<span class="num">}</span><span class="str">"</span><span class="par">)</span></pre>
+                <p>و خروجی این برنامه : </p>
+                <pre><em>a is equal to : 10</em></pre>
+                <p>این نکته را به خوبی به یاد بسپارید چون در آینده زیاد با آن سر و کار داریم.</p>
+            </div>
+            <p>حال خروجی این برنامه : </p>
+            <pre><em>a + b = 30
+a - b = -10
+a * b = 200
+a / b = 0.5
+a ** c = 1000
+a // c = 3
+a % c = 1</em></pre>
+            
+            <h1>مقایسه : </h1>
+            <p>در مقایسه ها همیشه مقدار True یا False برگردانده میشود که میتواند در یک bool ذخیره شود.</p>
+            <ul>
+                <li>&lt; : سمت چپ بزرگتر از سمت راست</li>
+                <li>&gt; : سمت چپ کوچکتر از سمت راست</li>
+                <li>=&lt; : سمت چپ بزرگتر یا مساوی سمت راست</li>
+                <li>=&gt; : سمت چپ کوچکتر یا مساوی سمت راست</li>
+                <li>== : سمت چپ مساوی سمت راست</li>
+                <li>=! : سمت راست مساوی نیست با سمت راست</li>
+                <li>and : اگر سمت راست و چپ True بودند مقدار True بر میگرداند ام حتی اگر یکی از آنها False بود False بر میگرداند</li>
+                <li>or : اگر سمت چپ و راست هر دو false بودند false بر میگرداند اما اگر حتی یکی از آنها True باشد True بر میگرداند</li>
+                <li>not : همان !</li>
+            </ul>
+            <p>برای مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="num">1</span>
+b <span class="var">=</span> <span class="num">2</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">&lt;</span> b<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">&gt;</span> b<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">==</span> b<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">&lt;=</span> b<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">&gt;=</span> b<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>a <span class="var">!=</span> b<span class="par">)</span>
+c <span class="var">=</span> <span class="blue">True</span>
+d <span class="var">=</span> <span class="blue">False</span>
+<span class="func">print</span><span class="par">(</span>c <span class="var">and</span> d<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>c <span class="var">or</span> d<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="var">not</span> c<span class="par">)</span></pre>
+            <p>که خروجی اش :</p>
+            <pre><em>False
+True 
+False
+False
+True 
+True 
+False
+True 
+False</em></pre>
+            <h1>شرط و شروط : </h1>
+            <p>وقتی دو چیز را با هم مقایسه میکنیم میخواهیم که اگر برای مثال یکی از دیگری بیشتر بود اتقاقی بیفتد. برای این کار از if استفاده میکنیم. مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="num">10</span>
+b <span class="var">=</span> <span class="num">20</span>
+
+<span class="var">if</span> a <span class="var">&gt;</span> b:
+    <span class="func">print</span><span class="par">(</span><span class="str">"A is bigger than B"</span><span class="par">)</span></pre>
+    <p>در کد بالا اگر a  بیشتر از b باشد پیغام را نمایش میدهد و چون اینطور نیست پس خروجی نمایش داده نمیشود.</p>
+    <p>در مبحث شرط و شروط دو چیز مهم دیگر نیز داریم: else و elif مثال : </p>
+    <pre>
+a <span class="var">=</span> <span class="num">10</span>
+b <span class="var">=</span> <span class="num">20</span>
+
+<span class="var">if</span> a <span class="var">&gt;</span> b:
+    <span class="func">print</span><span class="par">(</span><span class="str">"A is bigger than B"</span><span class="par">)</span>
+<span class="var">elif</span> a <span class="var">&lt;</span> b:
+    <span class="func">print</span><span class="par">(</span><span class="str">"A is smaller than B"</span><span class="par">)</span>
+<span class="var">elif</span> a <span class="var">==</span> b:
+    <span class="func">print</span><span class="par">(</span><span class="str">"A equals B"</span><span class="par">)</span>
+<span class="var">else</span>:
+    <span class="func">print</span><span class="par">(</span><span class="str">"This can't Happen !"</span><span class="par">)</span>
+</pre>
+            <p>در کد بالا اگر a بزرگتر از b باشد پیغام اول را پرینت میکند, اگر از b کوچکتر باشد پیغام دوم و اگر برابر آن باشد پیغام سوم را پرینت میکند. حالت چهارم هم هرگز اتقاف نمی افتد چون a یا بزرگتر از b است یا کوچکتر از آن است و یا برابر آن است پسپیغام چهارم هیچ وقت نمایش داده نمیشود.</p>
+            <p>خروجی : </p>
+            <pre><em>A is smaller than B</em></pre>
+            <h1>لیست و دیکشنری : </h1>
+            <p>فرض کنید میخواهیم 1000 عدد را ذخیره کنیم. آیا حاضرید 1000 خط کد بنویسید و برای هر یک نامی بگذارید. این کار هم باعث تلف کردن زمان و هم باعث پر شدن رم و کند شدن نرم افزار میشود. برای همین از لیست ها و دیکشنری ها استفاده میکنیم. لیست ها در زبان های دیگر آرایه نیز خوانده میشوند. مثال : </p>
+            <pre>l <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span><span class="par">]</span></pre>
+            <p>در کد بالا یک آرایه با نام l  ساختیمو در آن سه مقدار 1و 2و 3 را قرار دادیم. حال شاید بپرسید چگونه به هر یک از داده های درون لیست دسترسی پیدا میکنیم؟ برای دسترسی به آنها از index استفاده میکنیم . شروع شمارش در کامپیوتر ها از 0 شروع میشود. یعنی اگر میخواهیم اولین مقدار را در لیست بگیریم باید index 0 آن را بگیریم. و یا اگر میخواهیم داده دهم را بگیریم باید از index 9 استفاده کنیم. نحوه گرفتن index نیز با [] است برای مثال : </p>
+            <pre>
+l <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span><span class="par">]</span>
+<span class="func">print</span><span class="par">(</span>l<span class="par">[</span><span class="num">0</span><span class="par">]</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>l<span class="par">[</span><span class="num">1</span><span class="par">]</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>l<span class="par">[</span><span class="num">2</span><span class="par">]</span><span class="par">)</span></pre>
+            <p>خروجی : </p>
+            <pre><em>1
+2
+3</em></pre>
+            <p>در دیکشنری ها تنها تقاوت این است که دیگر index عدد نیست و index هر داده رو خودتان مشخص میکنید. مثال: </p>
+            <pre>dic <span class="var">=</span> <span class="par">{</span><span class="str">"health"</span> : <span class="num">20</span>, <span class="str">"coins"</span> : <span class="num">7</span><span class="par">}</span>
+<span class="func">print</span><span class="par">(</span>dic<span class="par">[</span><span class="str">"health"</span><span class="par">]</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>dic<span class="par">[</span><span class="str">"coins"</span><span class="par">]</span><span class="par">)</span>
+</pre>
+            <p>خروجی : </p>
+            <pre><em>20
+7</em></pre>
+            <h1>تکرار : </h1>
+            <p>فرض کنید میخواهید کدی را 1000 بار تکرار کنید یا میخواهید تک تک اعداد در یک لیست را پرینت کنید. در چنین جاهایی از loop یا حلقه استفاده میکنیم. مثال : </p>
+            <pre>
+<span class="var">for</span> i <span class="var">in</span> <span class="func">range</span><span class="par">(</span><span class="num">10</span><span class="par">)</span>:
+    <span class="func">print</span><span class="par">(</span><span class="str">"a"</span><span class="par">)</span></pre>
+    <p>اگر به زبان های دیگر تسلط دارید این کد معادل کد زیر است (مثال ++C): </p>
+    <pre>
+for(int i = 0; i &lt; 10; i++){
+    cout&lt;&lt;"a";
+}</pre>
+            <p>در کد بالا ما یک for loop داریم که 10 بار تکرار میشود. در پایتون از تابع range برای iterate کردن استفاده میکنیم. فعلا نیاز نیست معنی این اصطلاحات را بدانید. اینها را جلوتر یاد میگیرید. پس تعداد تکرار for loop ها به مقدار عددی که در ()range گذاشته شود بستگی دارد. نکته جالبی که باید بدانید این اسن که i در گردش اول 0 است. در گردش دوم 1 و به ترتیب تا هر مقدار باری که تکرار میشود. و شما میتوانید از همین استفاده کنید تا برای مثال اعداد 1 تا 10 را نمایش دهید.</p>
+            <p>سوال : اگر به شما یک لیست بدهم و از شما بخواهم که با یک حلقه تک تک اعضای آن را پرینت کنید چه میکنید ؟ (راهنمایی : برای بدست آوردن طول یک لیست از تابع ()len استفاده میکنیم.)</p>
+            <pre>l <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">6</span>, <span class="num">9</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">7</span>, <span class="num">1</span>, <span class="num">3</span>, <span class="str">"a"</span>, <span class="str">"c"</span>, <span class="blue">None</span>, <span class="blue">True</span><span class="par">]</span></pre>
+            <p>اگر کدتان چیزی مشابه کد زیر است کارتان را درست انجام داده اید.</p>
+            <pre>
+l <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">6</span>, <span class="num">9</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">7</span>, <span class="num">1</span>, <span class="num">3</span>, <span class="str">"a"</span>, <span class="str">"c"</span>, <span class="blue">None</span>, <span class="blue">True</span><span class="par">]</span>
+<span class="var">for</span> i <span class="var">in</span> <span class="func">range</span><span class="par">(</span><span class="func">len<span class="par">(</span>l<span class="par">)</span><span class="par">)</span>:
+    <span class="func">print</span><span class="par">(</span>l<span class="par">[</span>i</span><span class="par">]</span><span class="par">)</span></pre>
+    <p>البته این کد اشکالی بزرگ داره و اونم اینه که این کد پایتونیک نیست. این کد در زبان ها دیگه کاملا درست است . در پایتون هم درست اس ت اما پایتونیک نیست. یعنی راه بهتری و ساده ترسبرای انجام این کار وجود دارد. تابع ()range یک iterator  (که در آینده یاد میگیرید و فعلا میتوانید آن را یک لیست فرض کنید) بر میگرداند.</p>
+    <p>اینجا بهترین کاری که متوانید بکنید کد زیر است : </p>
+    <pre>
+l <span class="var">=</span> <span class="par">[</span><span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">6</span>, <span class="num">9</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">7</span>, <span class="num">1</span>, <span class="num">3</span>, <span class="str">"a"</span>, <span class="str">"c"</span>, <span class="blue">None</span>, <span class="blue">True</span><span class="par">]</span>
+<span class="var">for</span> i <span class="var">in</span> l:
+    <span class="func">print</span><span class="par">(</span>i<span class="par">)</span></pre>
+</pre>
+            <p>در کد بالا i برابر با همان آیتم های لیست است. یعنی در دوره اول آیتم اول، در دوره دوم آیتم دوم و ...</p>
+            <p>از همین میتوانیم نتیجه بگیریم که تابع ()range در واقع یک لیست ازاعداد 0 تا n بر میگرداند.</p>
+            <h1>حلقه While : </h1>
+            <p>کلمه while در انگلیسی یعنی تا وقتی که. در برنامه نویسی نیز به همین معنی است. مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="num">0</span>
+<span class="var">while</span> a <span class="var">&lt;</span> <span class="num">10</span>:
+    <span class="func">print</span><span class="par">(</span><span class="str">"a"</span><span class="par">)</span>
+    a <span class="var">+=</span> <span class="num">1</span>
+</pre>
+            <p>ترجمه مثال بالا به این صورت است که : تا وقتی که a کوچکتر از 10 است کد زیر را اجرا کن. پس خروجی به صورت زیر خواهد بود.</p>
+            <pre><em>a
+a
+a
+a
+a
+a
+a
+a
+a
+a</em></pre>
+            <div class="info">
+                <p>نکته : برای اینکه یک لوپ تا ابد کار کند میتوانید از دو کد زیر استفاده کنید.</p>
+                <pre>
+<span class="var">while</span> <span class="blue">True</span>:
+    #code
+<span class="var">while</span> <span class="num">1</span>:
+    #code
+</pre>
+            </div>
+
+            <h1>تبدیل انواع داده به یکدیگر</h1>
+            <p>در خیلی از اوقات نیازداریم که انواع داده را به یکدیگر تبدیل کنیم. برای تبدیل داده ها به یکدیگر تابع هایی از قبل تعریف شده مانند ()int و ()str و ()list و ()dict و ... مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="num">10</span>
+s <span class="var">=</span> <span class="func">str</span><span class="par">(</span><span class="num">10</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>s<span class="par">)</span>
+c <span class="var">=</span> <span class="num">1</span>
+b <span class="var">=</span> <span class="func">bool</span><span class="par">(</span>c<span class="par">)</span>
+<span class="func">print</span><span class="par">(</span>b<span class="par">)</span>
+d <span class="var">=</span> "123"
+i <span class="var">=</span> int(123)
+<span class="func">print</span>(i)
+e <span class="var">=</span> "123a"
+f <span class="var">=</span> <span class="func">int</span>(e)
+<span class="func">print</span><span class="par">(</span>f<span class="par">)</span>
+</pre>
+            <p>و خروجی : </p>
+            <pre><em>10
+True
+123 
+Traceback (most recent call last):
+  File "c:\Address\To\Your\File\main.py", line 11, in <module>
+    f = int(e)
+ValueError: invalid literal for int() with base 10: '123a'</em></pre>
+            <p>در مثال بالا یک ارور مشاهده میکنید و آن هم به خاطر این است که داده "" یک حرف a  دارد که نمیتواند تبدیل به عدد شود و به خاطر همین ارور می دهد.</p>
+            <h1>آمادگی برای ارور ها : </h1>
+            <p>خیلی از اوقات ما در کد به ارور بر میخوریم و دلیل آن هم از کد خود ما نیست.چون پیشبینی میکنیم که این ارور اتفاق خواهد افتاد پس از وقوع آن جلوگیری میکنیم. در پایتون از try و except  استفاده میکنیم .مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="str">"123a"</span>
+<span class="var">try</span>:
+    b <span class="var">=</span> <span class="func">int</span><span class="par">(</span>a<span class="par">)</span>
+    <span class="func">print</span><span class="par">(</span>b<span class="par">)</span>
+<span class="var">except</span> <span class="blue">Exception</span> <span class="var">as</span> e:
+    <span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"Exception Happenned :</span><span class="blue">\n</span><span class="num">{</span>e<span class="num">}</span><span class="str">"</span><span class="par">)</span></pre>
+    <p>خروجی : </p>
+    <pre><em>Exception Happenned :
+invalid literal for int() with base 10: '123a'</em></pre>
+            <p>در کد بالا چون "123a" دارای حرف a است نمیتواند تبدیل به عدد شود و به همین خاطر ارور رخ میدهد. حال میتوانیم با try کدرا امتحان کنیم و اگر اروری رخ داد نوع ارور را در e ذخیره میکنیم و سپس آن را پرینت میکنیم.</p>
+            <div class="info">
+                <p>نکته : میتوانید نوع ارور را مشخص کنید برای مثال مثال بالا را به شکل زیر نیز میتوان نوشت : </p>
+                <pre>
+a <span class="var">=</span> <span class="str">"123a"</span>
+<span class="var">try</span>:
+    b <span class="var">=</span> <span class="func">int</span><span class="par">(</span>a<span class="par">)</span>
+    <span class="func">print</span><span class="par">(</span>b<span class="par">)</span>
+<span class="var">except</span> <span class="blue">Exception</span> <span class="var">as</span> e:
+    <span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"Exception Happenned :</span><span class="blue">\n</span><span class="num">{</span>e<span class="num">}</span><span class="str">"</span><span class="par">)</span></pre>
+            </div>
+        </main>
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="direction:rtl;">
+                <a href="tutorials/introduction.html">از اینجا شروع کنید !!!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
