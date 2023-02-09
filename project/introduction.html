@@ -295,6 +295,40 @@ a <span class="var">=</span> <span class="str">"123a"</span>
 <span class="var">except</span> <span class="blue">Exception</span> <span class="var">as</span> e:
     <span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"Exception Happenned :</span><span class="blue">\n</span><span class="num">{</span>e<span class="num">}</span><span class="str">"</span><span class="par">)</span></pre>
             </div>
+            <h1>ورودی</h1>
+            <p>در زبان پایتون برای ورودی گرفتن از تابع ()input استفاده میکنیم.</p>
+            <p>مثال : </p>
+            <pre>
+a <span class="var">=</span> <span class="func">input</span><span class="par">(</span><span class="str">"Please enter number 1 : "</span><span class="par">)</span>
+b <span class="var">=</span> <span class="func">input</span><span class="par">(</span><span class="str">"Please enter number 2 : "</span><span class="par">)</span>
+<span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"The result is </span><span class="num">{</span>a <span class="var">+</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+</pre>
+<p>توضیح : در کد بالا تابع ()input برای ورودی گرفتن استفاده میشود و مقداری stringی که در آن میگذاریم حکم سوال را دارد. جلوی input میتوانید هر چیزی وارد کنید.</p>
+<p>خروجی : </p>
+<pre><em>Please enter number 1 : 2
+Please enter number 2 : 3
+The result is 23
+</em></pre>
+<p> هم اکنون شاید تعجب کنید که چرا 2 + 3 برابر 23 قرار داده شده است. این بدین دلیل است که ورودی که از کاربر گرفتیم به صورت string است. پس یعنی ما اگر به جای 2 و 3 a و b وارد کنیم خروجی ab می شد. پس برای تصحیح کد زیر را به کار میبریم. </p>
+<pre>
+<span class="var">try</span>:
+    a <span class="var">=</span> <span class="func">int</span><span class="par">(</span><span class="func">input</span><span class="par">(</span><span class="str">"Please enter number 1 : "</span><span class="par">))</span>
+    b <span class="var">=</span> <span class="func">int</span><span class="par">(</span><span class="func">input</span><span class="par">(</span><span class="str">"Please enter number 2 : "</span><span class="par">))</span>
+    <span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"The result is </span><span class="num">{</span>a <span class="var">+</span> b<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+<span class="var">except</span> <span class="blue">Exception</span> <span class="var">as</span> e:
+    <span class="func">print</span><span class="par">(</span><span class="blue">f</span><span class="str">"An error occured. Error : </span><span class="blue">\n</span><span class="num">{</span>e<span class="num">}</span><span class="str">"</span><span class="par">)</span>
+</pre>
+            <p>و خروجی اش : </p>
+            <pre><em>Please enter number 1 : 2
+Please enter number 2 : 3
+The result is 5
+///////////////////////////////////////////////////
+Please enter number 1 : a
+An error occured. Error : 
+invalid literal for int() with base 10: 'a'</em></pre>
+                <h1>تابع : </h1>
+                <p>نترسید این تابع هر چند چندان از تابع ریاضی دور نیست اما آن تابع نیست. هر گاه ما بخشی از کد داریم که میخواهیم در چند جا استفاده کنیم، به جای آنکه آن بخش از کد را چندین جا تکرار کنیم از تابع ها استفاده میکنیم. مثال :</p>
+                
         </main>
         <div class="row">
             <div class="col-md-6 offset-md-3" style="direction:rtl;">
