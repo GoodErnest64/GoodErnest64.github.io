@@ -16,6 +16,18 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-2QSK51PR1H", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-feed",
       options: {
         query: `
@@ -99,5 +111,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-2QSK51PR1H", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true
+        },
+      },
+    }
   ]
 };
